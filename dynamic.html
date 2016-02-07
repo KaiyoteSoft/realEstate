@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src="javascripts/jquery-1.10.2.min.js"></script>
+    <script src="javascripts/modernizr-2.7.1-csstransforms3d-canvas-touch.js"></script>
+    <script src="javascripts/megapix-image.js"></script>
+    <script src="javascripts/three.min.js"></script>
+    <script src="javascripts/Detector.js"></script>
+    <script src="javascripts/CSS3DRenderer.js"></script>
+    <script src="javascripts/theta-viewer.min.js"></script>
+
+    <title>Home - KaiyoteSoft Realtors</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/round-about.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">KaiyoteSoft Real Estate</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#aboutUs">Meet Our Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Meet the Code</a>
+                    </li>
+                    <li>
+                        <a href="room2.html" target="_blank">Living Room</a>
+                    </li>
+                    <li>
+                        <a href="room3.html" target="_blank">Upstairs</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+
+    <div class="container">
+      <h1>KaiyoteSoft Real Estate</h1>
+      <h4>We are happy to be your personal real estate tour guides</h4>
+      <h4>Explore our 360 image below. Drag mouse up, down, left,
+        right or scroll wheel to zoom</h4>
+        <div class="row">
+          <div id="theta-viewer"></div>
+          <script>
+        /*global jQuery */
+        (function ($) {
+            'use strict';
+            // #theta-viewerにパノラマ画像img/R0010035.JPGを表示
+            $("#theta-viewer").createThetaViewer('images/image-main.jpg');
+        }(jQuery));
+          </script>
+          <p>New academic building in Palo Alto, 25,000 sq/ft. Prime location
+            directly across from Stanford University and Town and Country
+            Shops. State of the art media equipment. Minutes away from the
+              world's highest concentration of venture capital and high-tech
+              startups. $12 million</p>
+        </div>
+        <!-- Introduction Row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">About Us
+                    <small>It's Nice to Meet You!</small>
+                </h1>
+                <p>This is a mockup of a real estate site using media
+                from a RICOH THETA S 360 degree camera. The site is based
+                on a concept described in the
+                <a href="http://theta360developers.github.io/">
+                  THETA Developers Unofficial Guide</a>.
+                In the concept, real estate agents are sent THETA S cameras
+                and a special smartphone application that is used to take 360
+                pictures and send them to a central site. You can get started
+                building the smartphone app by looking at the
+                <a href="https://developers.theta360.com/en/docs/sdk/">
+                  RICOH THETA Official SDK</a>.
+                The viewer is based on code written by Atsushi Kokubo.
+
+              </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Meet the Code
+                    <small>Download code samples for great RICOH THETA applications!</small>
+                </h1>
+                <ul>
+                  <li> <a href="https://github.com/KaiyoteSoft/realEstate" target="_blank">Code for this site</a> </li>
+                  <li><a href="https://github.com/theta360developers/ThetaViewer" target="_blank">JavaScript Viewer Code</a></li>
+                  <li><a href="http://theta360developers.github.io/blog/javascript/2015/12/17/theta-s-nodejs.html" target="_blank">Learn how to control the camera with node.js</a></li>
+                  <li><a href="http://codetricity.github.io/theta-s/" target="_blank">
+                    THETA developers Unofficial API guide to control the 360 degree camera</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Team Members Row -->
+        <div class="row" id="aboutUs">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Team</h2>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="images/craig_headLeft.png" alt="">
+                <h3>Craig Oda
+                    <small>Virtual Real Estate Guide</small>
+                </h3>
+                <p>Specializes in 360 degree real estate promotion!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="images/kai2.jpg" alt="">
+                <h3>Kai Oda
+                    <small>Summer Intern</small>
+                </h3>
+                <p>A talented new, hardworking member of our team!</p>
+            </div>
+            <!-- <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center">
+                <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                <h3>John Smith
+                    <small>Job Title</small>
+                </h3>
+                <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+            </div> -->
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Concept
+                    <small>Distribute THETA S and custom apps to real estate agents</small>
+                </h1>
+            </div>
+            <img src="images/realestate.png">
+        </div>
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; KaiyoteSoft 2016</p>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
